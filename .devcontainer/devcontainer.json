@@ -14,7 +14,6 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "ms-azuretools.vscode-docker",
                 "James-Yu.latex-workshop"
             ]
         }
