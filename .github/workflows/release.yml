@@ -18,10 +18,10 @@ jobs:
 
       - name: Compile LaTeX
         run: |
-            cd lualatex && latexmk && cd ..
-            cd uplatex && latexmk && cd ..
-            cd platex && latexmk && cd ..
-            cd pdflatex && latexmk && cd ..
+            (cd lualatex && latexmk)
+            (cd uplatex && latexmk)
+            (cd platex && latexmk)
+            (cd pdflatex && latexmk)
 
       - name: Upload PDFs artifact
         uses: actions/upload-artifact@v4
