@@ -1,5 +1,5 @@
-$out_dir = '../dist';
-$aux_dir = '../build';
+$out_dir = '../out';
+$aux_dir = '../aux';
 
 $pdf_mode = 3;
 

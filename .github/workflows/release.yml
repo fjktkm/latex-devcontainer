@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pdfs
-          path: dist/*.pdf
+          path: out/*.pdf
 
   release:
     needs: build

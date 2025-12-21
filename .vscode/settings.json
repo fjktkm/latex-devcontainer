@@ -1,6 +1,6 @@
 {
     "latex-workshop.latex.autoBuild.run": "onSave",
-    "latex-workshop.latex.outDir": "../dist",
+    "latex-workshop.latex.outDir": "../out",
     "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.latex.recipe.default": "latexmk (latexmkrc)"
 }

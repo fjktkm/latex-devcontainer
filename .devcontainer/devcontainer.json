@@ -7,7 +7,7 @@
     },
     "mounts": [
         {
-            "target": "${containerWorkspaceFolder}/build",
+            "target": "${containerWorkspaceFolder}/aux",
             "type": "volume"
         }
     ],
