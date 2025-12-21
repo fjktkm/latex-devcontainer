@@ -1,3 +1,6 @@
+## Custom setting for this template
+dist/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
