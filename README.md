@@ -19,7 +19,7 @@ LaTeX の執筆を快適に行うための開発コンテナのテンプレー�
 ちょうど最近 [Microsoft Store 版](https://apps.microsoft.com/detail/XP8CBJ40XLBWKX?hl=ja&gl=JP&ocid=pdpshare) がリリースされました（2025 年 5 月時点）．
 Windows で Docker Desktop を使う場合これからはこちらからインストールするとよいでしょう．
 
-また，最近は WSL にインストールされた Docker を使う方法も安定してきています．
+また，最近は WSL にインストールされた Docker を使う方法も安定してきています（2025 年 12 月時点）．
 Docker Desktop の不安定さはもうこりごりだという人はぜひ試してみるといいと思います．
 
 ## VSCode
