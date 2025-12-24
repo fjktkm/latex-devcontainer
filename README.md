@@ -8,15 +8,19 @@ LaTeX の執筆を快適に行うための開発コンテナのテンプレー�
 
 動作に必要なものは次のとおりです：
 
-- [Docker Desktop](https://www.docker.com/)
+- [Docker](https://www.docker.com/)
 - [Visual Studio Code（VSCode）](https://code.visualstudio.com/)
 - [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
-## Docker Desktop
+## Docker
 
-[公式ドキュメント](https://docs.docker.com/get-started/) の手順に従って Docker Desktop をインストールしてください．
+[公式ドキュメント](https://docs.docker.com/get-started/) の手順に従って Docker をインストールしてください．
+
 ちょうど最近 [Microsoft Store 版](https://apps.microsoft.com/detail/XP8CBJ40XLBWKX?hl=ja&gl=JP&ocid=pdpshare) がリリースされました（2025 年 5 月時点）．
-Windows の場合これからはこちらを使うのが良いでしょう．
+Windows で Docker Desktop を使う場合これからはこちらからインストールするとよいでしょう．
+
+また，最近は WSL にインストールされた Docker を使う方法も安定してきています．
+Docker Desktop の不安定さはもうこりごりだという人はぜひ試してみるといいと思います．
 
 ## VSCode
 
