@@ -9,7 +9,7 @@ LaTeX の執筆を快適に行うための開発コンテナのテンプレー�
 動作に必要なものは次のとおりです：
 
 - [Docker](https://www.docker.com/)
-- [Visual Studio Code（VSCode）](https://code.visualstudio.com/)
+- [Visual Studio Code（VS Code）](https://code.visualstudio.com/)
 - [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
 ## Docker
@@ -22,15 +22,15 @@ Windows で Docker Desktop を使う場合これからはこちらからイン�
 また，最近は WSL にインストールされた Docker を使う方法も安定してきています（2025 年 12 月時点）．
 Docker Desktop の不安定さはもうこりごりだという人はぜひ試してみるといいと思います．
 
-## VSCode
+## VS Code
 
-[公式ドキュメント](https://code.visualstudio.com/docs/setup/setup-overview) の手順に従って VSCode をインストールしてください．
+[公式ドキュメント](https://code.visualstudio.com/docs/setup/setup-overview) の手順に従って VS Code をインストールしてください．
 Windows の場合は [Microsoft Store](https://apps.microsoft.com/detail/XP9KHM4BK9FZ7Q?hl=ja&gl=JP&ocid=pdpshare) からのインストールがおすすめです．
 
 ## Remote Development Extension Pack
 
-VSCode に [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) をインストールしてください．
-VSCode の [公式ドキュメント](https://code.visualstudio.com/docs/getstarted/extensions) を参考にインストールしてください．
+VS Code に [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) をインストールしてください．
+VS Code の [公式ドキュメント](https://code.visualstudio.com/docs/getstarted/extensions) を参考にインストールしてください．
 
 > [!NOTE]
 > Remote Development Extension Pack は，デフォルトでインストールされている場合があります．
@@ -50,14 +50,14 @@ VSCode の [公式ドキュメント](https://code.visualstudio.com/docs/getstar
 - ローカルにクローンしたリポジトリの中身をコピーして新しいリポジトリを作成する
 - ローカルにクローンしたあと `.git` フォルダを削除してもう一度リポジトリを初期化する
 
-## 2. VSCode でリポジトリを開く
+## 2. VS Code でリポジトリを開く
 
-VSCode を起動し，クローンしたリポジトリのフォルダを開いてください．
+VS Code を起動し，クローンしたリポジトリのフォルダを開いてください．
 GitHub Desktop でクローンした場合は，クローン完了時に表示される「Open in Visual Studio Code」ボタンをクリックするのが楽なのでおすすめです．
 
 ## 3. 開発コンテナで開く
 
-リポジトリを開くと VSCode が `.devcontainer` フォルダを検出し，開発コンテナで開くかどうかを尋ねるポップアップが表示されます．
+リポジトリを開くと VS Code が `.devcontainer` フォルダを検出し，開発コンテナで開くかどうかを尋ねるポップアップが表示されます．
 ポップアップが表示されたら，「コンテナーで再度開く」をクリックしてください．
 開発コンテナの初回起動時には，コンテナイメージのダウンロードが行われるため，少し時間がかかります．
 
@@ -102,7 +102,7 @@ Git の改行コードの問題を解決するために，次のような `.gita
 ```
 
 Git の改行コードの問題を解決する方法はいろいろあるのですが，ユーザー依存ではなくワークスペース側で解決するほうが望ましいため，`.gitattributes` ファイルによる方法を採用しています．
-詳しくは [VSCode の公式ドキュメント](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks) を参照してください．
+詳しくは [VS Code の公式ドキュメント](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks) を参照してください．
 
 > [!NOTE]
 > このリポジトリでは BAT ファイルなどは使用していないので実のところ 1 行目だけで問題ないです．
@@ -161,7 +161,7 @@ $aux_dir = '../build';
 
 - 中間生成物の保存先を変更するため
 - 文献リストの管理でカスタマイズが必要になる場合が多いため
-- VSCode 以外のエディタでも同じ設定でコンパイルできるようにするため
+- VS Code 以外のエディタでも同じ設定でコンパイルできるようにするため
 
 たとえば LuaLaTeX の場合は次のような設定をしています：
 
