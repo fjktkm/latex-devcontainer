@@ -1,5 +1,5 @@
 {
-    "name": "texlive",
+    "name": "LaTeX (TeX Live)",
     "image": "texlive/texlive:latest",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {},
