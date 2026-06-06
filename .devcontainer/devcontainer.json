@@ -16,5 +16,7 @@
                 "James-Yu.latex-workshop"
             ]
         }
-    }
+    },
+    "onCreateCommand": "sudo chown -R vscode:vscode build",
+    "remoteUser": "vscode"
 }
