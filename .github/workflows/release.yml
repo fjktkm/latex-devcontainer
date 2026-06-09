@@ -13,16 +13,14 @@ jobs:
       image: texlive/texlive:latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v6
 
-      - name: Compile LaTeX
+      - name: Build LaTeX documents
         run: find . -name .latexmkrc -execdir latexmk \;
 
-      - name: Upload PDFs artifact
-        uses: actions/upload-artifact@v7
+      - uses: actions/upload-artifact@v7
         with:
-          name: pdfs
+          name: release-assets
           path: dist/*.pdf
 
   release:
@@ -32,14 +30,11 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v6
 
-      - name: Download PDF artifact
-        uses: actions/download-artifact@v8
+      - uses: actions/download-artifact@v8
         with:
-          name: pdfs
-          path: .
+          name: release-assets
 
       - name: Create GitHub Release
         env:
