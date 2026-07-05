@@ -8,7 +8,9 @@
         }
     ],
     "features": {
-        "ghcr.io/devcontainers/features/common-utils:2": {}
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "username": "texlive"
+        }
     },
     "customizations": {
         "vscode": {
@@ -17,6 +19,6 @@
             ]
         }
     },
-    "onCreateCommand": "sudo chown -R vscode:vscode build",
-    "remoteUser": "vscode"
+    "onCreateCommand": "sudo chown -R texlive:texlive build",
+    "remoteUser": "texlive"
 }
