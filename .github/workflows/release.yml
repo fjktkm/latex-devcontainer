@@ -13,7 +13,7 @@ jobs:
       image: texlive/texlive:latest
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Build LaTeX documents
         run: find . -name .latexmkrc -execdir latexmk \;
@@ -30,15 +30,16 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - uses: actions/download-artifact@v8
         with:
           name: release-assets
+          path: dist
 
       - name: Create GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           tag="v${{ github.run_number }}"
-          gh release create "$tag" ./*.pdf --title "$tag" --generate-notes
+          gh release create "$tag" dist/*.pdf --title "$tag" --generate-notes
