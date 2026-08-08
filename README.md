@@ -13,7 +13,7 @@ LaTeX の執筆を快適に行うための Dev Container のテンプレート�
 改善点や要望があれば，お気軽に Issue や Pull Request でお知らせください．
 詳しくは以下の記事をご覧ください：
 
-- [情報系のための Dev Container による LaTeX 環境構築](https://zenn.dev/fjktkm/books/8bec1228335d98)
+- [Dev Container による LaTeX 環境構築完全ガイド](https://zenn.dev/fjktkm/books/8bec1228335d98)
 - [Dev Container による LaTeX 環境構築のベストプラクティス](https://zenn.dev/nitmic/articles/6206fd0f4b52d8)
 
 # ✅ 動作要件
