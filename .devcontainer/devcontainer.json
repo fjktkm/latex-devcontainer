@@ -3,6 +3,7 @@
     "image": "texlive/texlive:latest",
     "mounts": [
         {
+            "source": "build-${devcontainerId}",
             "target": "${containerWorkspaceFolder}/build",
             "type": "volume"
         }
