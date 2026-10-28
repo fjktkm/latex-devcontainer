@@ -3,4 +3,4 @@ $aux_dir = '../build';
 
 $pdf_mode = 1;
 
-$latex = 'pdflatex -synctex=1 -interaction=nonstopmode %O %S';
+$pdflatex = 'pdflatex -synctex=1 -interaction=nonstopmode %O %S';
